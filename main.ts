@@ -1,13 +1,14 @@
-let Blue = 0
-let Green = 0
 let Red = 0
+let Green = 0
+let Blue = 0
 basic.forever(function () {
     pins.analogWritePin(AnalogPin.P0, Red)
     pins.analogWritePin(AnalogPin.P1, Green)
     pins.analogWritePin(AnalogPin.P2, Blue)
     if (pins.digitalReadPin(DigitalPin.P8) == 1 && Green < 1020) {
         Green = Green + 10
-    } else if (pins.digitalReadPin(DigitalPin.P8) == 1 && Green == 1020) {
+    }
+    else if (pins.digitalReadPin(DigitalPin.P8) == 1 && Green == 1020) {
         Green = 0
     }
     if (pins.digitalReadPin(DigitalPin.P12) == 1 && Red < 1020) {
