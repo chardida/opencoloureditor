@@ -1,6 +1,6 @@
-let Red = 0
-let Green = 0
 let Blue = 0
+let Green = 0
+let Red = 0
 basic.forever(function () {
     pins.analogWritePin(AnalogPin.P0, Red)
     pins.analogWritePin(AnalogPin.P1, Green)
